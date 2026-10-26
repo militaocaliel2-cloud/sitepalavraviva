@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palavra Viva — Seu caminho diário de fé</title>
+  
+  <!-- Favicon (Substitua o href pelo link ou arquivo da sua logo em miniatura) -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Biblioteca de Animações AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            appBg: '#F9F6F0',
+            appCard: '#FFFFFF',
+            appPrimary: '#6B2135',
+            appPrimaryDark: '#541928',
+            appTextDark: '#2C1810',
+            appTextMuted: '#7A6B63',
+            appAccent: '#C9A050',
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F9F6F0;
+      color: #2C1810;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    h1, h2, h3, .font-serif {
+      font-family: 'Cinzel', serif;
+    }
+    .phone-shadow {
+      box-shadow: 0 25px 50px -12px rgba(84, 25, 40, 0.25);
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-[#F9F6F0]/90 backdrop-blur-md border-b border-[#E8E2D8]">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- Espaço para LOGO no Cabeçalho -->
+        <div class="w-10 h-10 rounded-xl bg-[#6B2135] flex items-center justify-center text-white font-serif text-xl font-bold shadow-md overflow-hidden">
+          <!-- Se tiver a imagem da logo, descomente a linha abaixo e ajuste o src: -->
+          <img src="logo.png" alt="Logo Palavra Viva" class="w-full h-full object-cover"> 
+        </div>
+        <div>
+          <span class="font-serif font-bold text-xl text-[#6B2135] block leading-tight">Palavra Viva</span>
+          <span class="text-xs text-[#7A6B63]">seu caminho diário de fé</span>
+        </div>
+      </div>
+
+      <a href="https://palavra-viva-drab.vercel.app/" target="_blank" rel="noopener noreferrer" 
+         class="bg-[#6B2135] hover:bg-[#541928] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-sm hover:shadow-md flex items-center gap-2">
+        <span>Abrir Web App</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 md:py-20 px-4 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    
+    <!-- Texto Principal -->
+    <div class="lg:col-span-7 space-y-6 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#6B2135]/10 text-[#6B2135] text-xs font-semibold uppercase tracking-wider">
+        <svg class="w-4 h-4 text-[#6B2135]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <span>Experiência Espiritual Diária</span>
+      </div>
+      
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2C1810] leading-tight">
+        Um pequeno passo para o seu dia de fé.
+      </h1>
+      
+      <p class="text-lg text-[#7A6B63] max-w-xl mx-auto lg:mx-0 leading-relaxed">
+        Acesse a Liturgia Diária com áudio, orações, Santo Terço guiado e lembretes para cultivar momentos de silêncio e presença com Deus no seu ritmo.
+      </p>
+
+      <!-- Botões de Ação -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+        <a href="https://palavra-viva-drab.vercel.app/" target="_blank" rel="noopener noreferrer" 
+           class="w-full sm:w-auto bg-[#6B2135] hover:bg-[#541928] text-white px-8 py-4 rounded-2xl font-bold text-base shadow-lg hover:shadow-xl transition-all text-center flex items-center justify-center gap-3">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          <span>Acessar o App Web Agora</span>
+        </a>
+        <a href="#como-instalar" 
+           class="w-full sm:w-auto bg-white border border-[#E8E2D8] hover:bg-[#F9F6F0] text-[#6B2135] px-6 py-4 rounded-2xl font-semibold text-base transition-all text-center flex items-center justify-center gap-2">
+          <svg class="w-5 h-5 text-[#6B2135]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          <span>Como Instalar no Celular</span>
+        </a>
+      </div>
+
+      <!-- Lojas em Breve -->
+      <div class="pt-6 border-t border-[#E8E2D8] flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 text-[#7A6B63] text-sm">
+        <span class="font-medium">Em breve nas lojas oficiais:</span>
+        <div class="flex items-center gap-4 opacity-75">
+          <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-[#E8E2D8] shadow-sm font-medium text-xs text-[#2C1810]">
+            <svg class="w-4 h-4 text-[#6B2135]" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.01 1.01 0 0 1-.61-.928V2.742a1.01 1.01 0 0 1 .61-.928zm11.385 11.385l2.122 2.122-11.455 6.618 9.333-8.74zm0-2.398L5.661 2.063l11.455 6.618-2.122 2.122zM20.25 11.1l-2.732 1.577-2.43-2.43 2.43-2.43 2.732 1.577a1.05 1.05 0 0 1 0 1.696z"/></svg>
+            <span>Google Play</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-[#E8E2D8] shadow-sm font-medium text-xs text-[#2C1810]">
+            <svg class="w-4 h-4 text-[#6B2135]" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 5.35c.64-.78 1.07-1.86.95-2.95-1 .04-2.22.67-2.93 1.48-.58.66-1.09 1.74-.95 2.81 1.12.09 2.27-.56 2.93-1.34z"/></svg>
+            <span>App Store</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smartphone Mockup com Telas Reais -->
+    <div class="lg:col-span-5 flex flex-col items-center" data-aos="fade-left" data-aos-duration="1000">
+      <div class="relative w-full max-w-[320px] bg-black rounded-[48px] p-3 border-4 border-[#3A332C] phone-shadow">
+        
+        <!-- Notch / Dynamic Island -->
+        <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-30 flex items-center justify-end px-2">
+          <div class="w-2.5 h-2.5 rounded-full bg-[#1A1A1A]"></div>
+        </div>
+
+        <!-- Tela do Celular exibindo Imagem Real -->
+        <div class="bg-[#F9F6F0] rounded-[38px] overflow-hidden h-[600px] relative border border-[#E8E2D8]">
+          <!-- Imagens Reais do App -->
+          <img id="screen-img-1" src="inicio.jpeg" alt="Tela Inicial do Palavra Viva" class="w-full h-full object-cover object-top transition-opacity duration-300">
+          <img id="screen-img-2" src="liturgia.jpeg" alt="Tela da Liturgia Diária" class="w-full h-full object-cover object-top transition-opacity duration-300 hidden">
+          <img id="screen-img-3" src="orações.jpeg" alt="Tela de Orações" class="w-full h-full object-cover object-top transition-opacity duration-300 hidden">
+          <img id="screen-img-4" src="favoritos.jpeg" alt="Tela de Favoritos" class="w-full h-full object-cover object-top transition-opacity duration-300 hidden">
+          <img id="screen-img-5" src="terço.jpeg" alt="Tela do Santo Terço" class="w-full h-full object-cover object-top transition-opacity duration-300 hidden">
+          <img id="screen-img-6" src="lembretes.jpeg" alt="Tela de Lembretes" class="w-full h-full object-cover object-top transition-opacity duration-300 hidden">
+        </div>
+      </div>
+
+      <!-- Controle do Mockup (Seletor de Telas Reais - Versão Compacta) -->
+      <div class="mt-3 flex items-center gap-1 bg-white p-1 rounded-full border border-[#E8E2D8] shadow-sm overflow-x-auto max-w-full">
+        <button onclick="showScreen(1)" id="btn-screen-1" class="px-2 py-1 rounded-full text-[10px] font-semibold bg-[#6B2135] text-white whitespace-nowrap transition-colors">Início</button>
+        <button onclick="showScreen(2)" id="btn-screen-2" class="px-2 py-1 rounded-full text-[10px] font-semibold text-[#7A6B63] hover:text-[#6B2135] whitespace-nowrap transition-colors">Liturgia</button>
+        <button onclick="showScreen(3)" id="btn-screen-3" class="px-2 py-1 rounded-full text-[10px] font-semibold text-[#7A6B63] hover:text-[#6B2135] whitespace-nowrap transition-colors">Orações</button>
+        <button onclick="showScreen(4)" id="btn-screen-4" class="px-2 py-1 rounded-full text-[10px] font-semibold text-[#7A6B63] hover:text-[#6B2135] whitespace-nowrap transition-colors">Favoritos</button>
+        <button onclick="showScreen(5)" id="btn-screen-5" class="px-2 py-1 rounded-full text-[10px] font-semibold text-[#7A6B63] hover:text-[#6B2135] whitespace-nowrap transition-colors">Terço</button>
+        <button onclick="showScreen(6)" id="btn-screen-6" class="px-2 py-1 rounded-full text-[10px] font-semibold text-[#7A6B63] hover:text-[#6B2135] whitespace-nowrap transition-colors">Lembretes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recursos Grid -->
+  <section class="py-16 px-4 max-w-6xl mx-auto space-y-12">
+    <div class="text-center max-w-2xl mx-auto space-y-3" data-aos="fade-up" data-aos-duration="800">
+      <h2 class="text-3xl font-bold text-[#2C1810]">Tudo o que você precisa em um só lugar</h2>
+      <p class="text-[#7A6B63]">Recursos projetados com carinho para fortalecer a sua fé diariamente.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-2xl border border-[#E8E2D8] space-y-3 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="w-12 h-12 rounded-xl bg-[#6B2135]/10 text-[#6B2135] flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-[#2C1810]">Liturgia & Áudio</h3>
+        <p class="text-sm text-[#7A6B63] leading-relaxed">Acompanhe as leituras do dia, o evangelho e escute a narração em áudio para rezar onde estiver.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-2xl border border-[#E8E2D8] space-y-3 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="w-12 h-12 rounded-xl bg-[#6B2135]/10 text-[#6B2135] flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-[#2C1810]">Santo Terço Interativo</h3>
+        <p class="text-sm text-[#7A6B63] leading-relaxed">Acompanhe os mistérios diários e o progresso da sua oração com contador de contas em tempo real.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-2xl border border-[#E8E2D8] space-y-3 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+        <div class="w-12 h-12 rounded-xl bg-[#6B2135]/10 text-[#6B2135] flex items-center justify-center">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-[#2C1810]">Lembretes Personalizados</h3>
+        <p class="text-sm text-[#7A6B63] leading-relaxed">Defina os horários e dias que melhor se adaptam à sua rotina para pausar e se conectar com Deus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSO A PASSO DE INSTALAÇÃO (ANDROID & IOS) -->
+  <section id="como-instalar" class="py-16 px-4 max-w-4xl mx-auto space-y-10 border-t border-[#E8E2D8]" data-aos="fade-up" data-aos-duration="900">
+    <div class="text-center space-y-3">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#6B2135]">Instalação Rápida</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-[#2C1810]">Como adicionar à sua Tela Inicial</h2>
+      <p class="text-[#7A6B63] max-w-xl mx-auto">Adicione o Palavra Viva diretamente na tela do seu celular para abri-lo com um toque, como um app nativo.</p>
+    </div>
+
+    <!-- Toggle Android / iOS -->
+    <div class="bg-white p-2 rounded-2xl border border-[#E8E2D8] flex items-center justify-center max-w-sm mx-auto gap-2 shadow-sm">
+      <button onclick="switchOs('android')" id="btn-os-android" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all bg-[#6B2135] text-white flex items-center justify-center gap-2">
+        <span>Android</span>
+      </button>
+      <button onclick="switchOs('ios')" id="btn-os-ios" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all text-[#7A6B63] hover:text-[#6B2135] flex items-center justify-center gap-2">
+        <span>iPhone (iOS)</span>
+      </button>
+    </div>
+
+    <!-- Guia Android -->
+    <div id="guide-android" class="bg-white p-6 md:p-8 rounded-3xl border border-[#E8E2D8] shadow-sm space-y-6">
+      <div class="flex items-center gap-3 border-b border-[#E8E2D8] pb-4">
+        <div class="w-10 h-10 rounded-xl bg-[#6B2135]/10 text-[#6B2135] flex items-center justify-center">
+          <svg class="w-5 h-5 text-[#6B2135]" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.01 1.01 0 0 1-.61-.928V2.742a1.01 1.01 0 0 1 .61-.928zm11.385 11.385l2.122 2.122-11.455 6.618 9.333-8.74zm0-2.398L5.661 2.063l11.455 6.618-2.122 2.122zM20.25 11.1l-2.732 1.577-2.43-2.43 2.43-2.43 2.732 1.577a1.05 1.05 0 0 1 0 1.696z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-[#2C1810]">No Android (Google Chrome)</h3>
+          <p class="text-xs text-[#7A6B63]">Siga estes 3 passos simples no seu navegador Chrome:</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#F9F6F0] p-5 rounded-2xl border border-[#E8E2D8] space-y-2">
+          <span class="w-8 h-8 rounded-full bg-[#6B2135] text-white font-bold flex items-center justify-center text-sm">1</span>
+          <h4 class="font-bold text-sm text-[#2C1810] pt-1">Abra o Link</h4>
+          <p class="text-xs text-[#7A6B63] leading-relaxed">Acesse <strong>palavra-viva-drab.vercel.app</strong> pelo Chrome do seu celular.</p>
+        </div>
+
+        <div class="bg-[#F9F6F0] p-5 rounded-2xl border border-[#E8E2D8] space-y-2">
+          <span class="w-8 h-8 rounded-full bg-[#6B2135] text-white font-bold flex items-center justify-center text-sm">2</span>
+          <h4 class="font-bold text-sm text-[#2C1810] pt-1">Abra o Menu</h4>
+          <p class="text-xs text-[#7A6B63] leading-relaxed">Toque nos <strong>três pontinhos (⋮)</strong> no canto superior direito.</p>
+        </div>
+
+        <div class="bg-[#F9F6F0] p-5 rounded-2xl border border-[#E8E2D8] space-y-2">
+          <span class="w-8 h-8 rounded-full bg-[#6B2135] text-white font-bold flex items-center justify-center text-sm">3</span>
+          <h4 class="font-bold text-sm text-[#2C1810] pt-1">Adicionar à Tela</h4>
+          <p class="text-xs text-[#7A6B63] leading-relaxed">Selecione <strong>"Adicionar à tela inicial"</strong> ou <strong>"Instalar aplicativo"</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guia iOS -->
+    <div id="guide-ios" class="bg-white p-6 md:p-8 rounded-3xl border border-[#E8E2D8] shadow-sm space-y-6 hidden">
+      <div class="flex items-center gap-3 border-b border-[#E8E2D8] pb-4">
+        <div class="w-10 h-10 rounded-xl bg-[#6B2135]/10 text-[#6B2135] flex items-center justify-center">
+          <svg class="w-5 h-5 text-[#6B2135]" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 5.35c.64-.78 1.07-1.86.95-2.95-1 .04-2.22.67-2.93 1.48-.58.66-1.09 1.74-.95 2.81 1.12.09 2.27-.56 2.93-1.34z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-[#2C1810]">No iPhone / iPad (Safari)</h3>
+          <p class="text-xs text-[#7A6B63]">Siga estes 3 passos simples no navegador Safari:</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#F9F6F0] p-5 rounded-2xl border border-[#E8E2D8] space-y-2">
+          <span class="w-8 h-8 rounded-full bg-[#6B2135] text-white font-bold flex items-center justify-center text-sm">1</span>
+          <h4 class="font-bold text-sm text-[#2C1810] pt-1">Abra no Safari</h4>
+          <p class="text-xs text-[#7A6B63] leading-relaxed">Acesse <strong>palavra-viva-drab.vercel.app</strong> pelo navegador Safari.</p>
+        </div>
+
+        <div class="bg-[#F9F6F0] p-5 rounded-2xl border border-[#E8E2D8] space-y-2">
+          <span class="w-8 h-8 rounded-full bg-[#6B2135] text-white font-bold flex items-center justify-center text-sm">2</span>
+          <h4 class="font-bold text-sm text-[#2C1810] pt-1">Toque em Compartilhar</h4>
+          <p class="text-xs text-[#7A6B63] leading-relaxed">Toque no ícone de <strong>Compartilhar (quadrado com seta para cima)</strong> na barra inferior.</p>
+        </div>
+
+        <div class="bg-[#F9F6F0] p-5 rounded-2xl border border-[#E8E2D8] space-y-2">
+          <span class="w-8 h-8 rounded-full bg-[#6B2135] text-white font-bold flex items-center justify-center text-sm">3</span>
+          <h4 class="font-bold text-sm text-[#2C1810] pt-1">Adicionar à Tela de Início</h4>
+          <p class="text-xs text-[#7A6B63] leading-relaxed">Role as opções para baixo e toque em <strong>"Adicionar à Tela de Início"</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-16 px-4 max-w-4xl mx-auto text-center space-y-6" data-aos="zoom-in" data-aos-duration="800">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#2C1810]">Comece o seu momento de fé hoje mesmo</h2>
+    <p class="text-[#7A6B63] max-w-lg mx-auto">Acesse agora pelo navegador e comece a usufruir de todas as orações e leituras.</p>
+    <a href="https://palavra-viva-drab.vercel.app/" target="_blank" rel="noopener noreferrer" 
+       class="inline-block bg-[#6B2135] hover:bg-[#541928] text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all">
+      Acessar o Palavra Viva Web App
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#2C1810] text-[#D9D2C9] py-8 border-t border-[#3A332C]">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <p>© 2026 Palavra Viva. Todos os direitos reservados.</p>
+      <p>Desenvolvido com fé e simplicidade.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts das Animações e Lógica -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inicializar biblioteca de animações ao rolar a página
+    AOS.init({
+      once: true, // Executar animação apenas uma vez ao descer
+      offset: 50, // Distância para disparar a animação
+    });
+
+    // Função para alterar as fotos reais no mockup do smartphone
+    function showScreen(num) {
+      for (let i = 1; i <= 6; i++) {
+        const img = document.getElementById(`screen-img-${i}`);
+        const btn = document.getElementById(`btn-screen-${i}`);
+        
+        if (i === num) {
+          img.classList.remove('hidden');
+          btn.className = 'px-2 py-1 rounded-full text-[10px] font-semibold bg-[#6B2135] text-white whitespace-nowrap transition-colors';
+        } else {
+          img.classList.add('hidden');
+          btn.className = 'px-2 py-1 rounded-full text-[10px] font-semibold text-[#7A6B63] hover:text-[#6B2135] whitespace-nowrap transition-colors';
+        }
+      }
+    }
+
+    // Função para alterar o passo a passo Android / iOS
+    function switchOs(os) {
+      const guideAndroid = document.getElementById('guide-android');
+      const guideIos = document.getElementById('guide-ios');
+      const btnAndroid = document.getElementById('btn-os-android');
+      const btnIos = document.getElementById('btn-os-ios');
+
+      if (os === 'android') {
+        guideAndroid.classList.remove('hidden');
+        guideIos.classList.add('hidden');
+        btnAndroid.className = 'flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all bg-[#6B2135] text-white flex items-center justify-center gap-2';
+        btnIos.className = 'flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all text-[#7A6B63] hover:text-[#6B2135] flex items-center justify-center gap-2';
+      } else {
+        guideAndroid.classList.add('hidden');
+        guideIos.classList.remove('hidden');
+        btnIos.className = 'flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all bg-[#6B2135] text-white flex items-center justify-center gap-2';
+        btnAndroid.className = 'flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all text-[#7A6B63] hover:text-[#6B2135] flex items-center justify-center gap-2';
+      }
+    }
+  </script>
+</body>
+</html>
